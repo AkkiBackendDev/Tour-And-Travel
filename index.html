@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tour and Travel Information System</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">AK Tour and Travel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#FTour">Tours</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="jumbotron">
+        <div class="container">
+            <h1>Welcome to AK Tour and Travel </h1>
+           <p id="element"> </p>
+            <!-- <p>Find the best tour and travel packages for your next vacation.</p> -->
+            <a href="#FTour" class="btn btn-primary">View Tours</a>
+        </div>
+    </header>
+    <section class="container" id="FTour">
+        <h2>Featured Tours</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Lakshdweep.jpg" class="card-img-top" alt="Tour 1">
+                    <div class="card-body">
+                        <h5 class="card-title">LAKSHDWEEP</h5>
+                        <p class="card-text">This is a description of Tour 1.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Thiland.jpg" class="card-img-top" alt="Tour 2">
+                    <div class="card-body">
+                        <h5 class="card-title">THILAND</h5>
+                        <p class="card-text">This is a description of Tour 2.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Malaysia.jpg" class="card-img-top" alt="Tour 3">
+                    <div class="card-body">
+                        <h5 class="card-title">MALAYSIA</h5>
+                        <p class="card-text">This is a description of Tour 3.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="LBTour">
+        <h2>Low Budget Tours</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Manali.png" class="card-img-top" alt="Tour 1">
+                    <div class="card-body">
+                        <h5 class="card-title">MANALI</h5>
+                        <p class="card-text">This is a description of Tour 1.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="rishikesh.jpg" class="card-img-top" alt="Tour 2">
+                    <div class="card-body">
+                        <h5 class="card-title">RISHIKESH</h5>
+                        <p class="card-text">This is a description of Tour 2.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="Kedarnath.jpg" class="card-img-top" alt="Tour 3">
+                    <div class="card-body">
+                        <h5 class="card-title">KEDARNATH</h5>
+                        <p class="card-text">This is a description of Tour 3.</p>
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h3>About Us</h3>
+              <p>We are a leading tour and travel company offering a wide range of travel services and packages to our valued customers.</p>
+            </div>
+            <div class="col-md-4">
+              <h3>Quick Links</h3>
+              <ul class="list-unstyled">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#FTour">Tours</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Services</a></li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h3>Follow Us</h3>
+              <ul class="list-unstyled">
+                <li><a href="#">Facebook</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">Instagram</a></li>
+                <li><a href="#">LinkedIn</a></li>
+              </ul>
+            </div>
+          </div>
+          <p class="text-center">Copyright © AK Tour and Travels.com | All rights reserved</p>
+        </div>
+      </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Find the best tour and travel packages for your next vacation"],
+        typeSpeed: 50,
+      });
+    </script>
+<script>
+  document.querySelector('.navbar-toggler').addEventListener('click', function() {
+  document.querySelector('.collapse.navbar-collapse').classList.toggle('show');
+});
+</script>
+</body>
+</html>
